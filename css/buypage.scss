@@ -1,0 +1,131 @@
+@import "common.scss";
+body{
+  background:rgb(203,203,203);
+}
+#nav-top{
+  margin-top: px2rem(40);
+  @include size(px2rem(640),px2rem(88));
+  background: #fff;
+  .btn {
+    img {
+      @extend .left;
+      @include pic-con(px2rem(40), px2rem(40));
+      margin-top:4%;
+      margin-left: px2rem(20);
+    }
+  }
+  p{
+    @include font(px2rem(50),200);
+    @extend .left;
+    margin:px2rem(0) 0 0 px2rem(140);
+    line-height: px2rem(88);
+  }
+}
+$color:rgb(239,239,239);
+#buy-con{
+  overflow: hidden;
+  margin-top: px2rem(5);
+  .goods2{
+    @include size(px2rem(640),px2rem(198));
+    background:$color;
+    .back{
+      @include size(px2rem(150),px2rem(150));
+      background-color: #fff;
+      margin:px2rem(25) 0 0 px2rem(25);
+      @extend .left;
+      img{
+        @include size(px2rem(96),px2rem(96));
+        margin:px2rem(28) 0 0 px2rem(28);
+      }
+    }
+    p{
+      @include size(px2rem(422),px2rem(113));
+      @extend .left;
+      margin:px2rem(20) 0 0 px2rem(25);
+      @include font(px2rem(30),200);
+    }
+    .favor1{
+      width: px2rem(450);
+      @extend .left;
+      span{
+        &:nth-child(1){color: rgb(255,85,0);font-size:px2rem(37);font-weight:200;margin-left: px2rem(25);}
+        &:nth-child(2){color:rgb(169,169,169);text-decoration: line-through;font-size: px2rem(30);margin-left: px2rem(25);}
+      }
+    }
+  }
+  .buy-size,.buy-color{
+    height: px2rem(158);
+    background:$color;
+    margin-top: px2rem(2);
+    p{
+      width: px2rem(100);
+      margin-left: px2rem(24);
+      margin-bottom: px2rem(10);
+      @include font(px2rem(40),100);
+    }
+    span{
+      @include size(px2rem(136),px2rem(80));
+      display: block;
+      @extend .left;
+      margin-left: px2rem(18);
+      background: #fff;
+      text-align: center;
+      line-height: px2rem(80);
+      border: 1px solid #ccc;
+    }
+  }
+  .buy-number{
+    position: relative;
+    background: $color;
+    border-top:1px dashed #ccc;
+    @include size(px2rem(640),px2rem(500));
+     .num{
+       width: px2rem(100);
+       margin-left: px2rem(24);
+       margin-top: px2rem(10);
+     }
+    .add{
+      span {
+        background: #fff;
+        font-size: px2rem(70);
+        font-family: sans-serif;
+        border:1px solid #ccc;
+        display: block;
+        float: left;
+        margin-left: px2rem(15);
+        text-align: center;
+        line-height: px2rem(81);
+        &:nth-child(1){margin-left: px2rem(24);@include size(px2rem(81),px2rem(81));}
+        &:nth-child(2){margin-left: px2rem(24);@include size(px2rem(81),px2rem(81));}
+      }
+      input{
+        float: left;
+        margin-left: px2rem(24);
+        @include size(px2rem(140),px2rem(81));
+        font-size: px2rem(50);
+        font-family: sans-serif;
+        text-align: center;
+        line-height: px2rem(81);
+      }
+    }
+    .num1{
+      color: rgb(255,85,0);
+      @include num;
+    }
+    .num2{
+      @include num;
+    }
+    .buy{
+      position: absolute;
+      bottom: px2rem(10);
+      left: px2rem(24);
+      @include size(px2rem(592),px2rem(87));
+      background:rgb(255,85,0);
+      text-align: center;
+      line-height: px2rem(87);
+      bottom: px2rem(10);
+      border-radius: px2rem(15);
+      color: #fff;
+    }
+  }
+}

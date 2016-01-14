@@ -1,0 +1,123 @@
+@import "common.scss";
+
+#nav-top{
+  margin-top: px2rem(40);
+  @include size(px2rem(640),px2rem(50));
+}
+.menu{
+  height: px2rem(87);
+  img {
+    @extend .left;
+    @include pic-con(px2rem(54),px2rem(45));
+    margin-left: px2rem(30);
+  }
+}
+.search{
+  position: absolute;
+  input{
+    @extend .left;
+    margin-left:px2rem(30);
+    @include pic-con(px2rem(470),px2rem(45));
+    background-color:rgb(222,222,222);
+    border-radius: px2rem(10);
+  }
+  img{
+    position: relative;
+    left: px2rem(455);
+    top:px2rem(-36);
+    @include pic-con(px2rem(30),px2rem(30));
+  }
+}
+
+#banner{
+  img{
+    @include pic-con(px2rem(640),px2rem(257));
+    margin-top: px2rem(13);
+  }
+}
+$color:rgb(219,219,219);
+#nav{
+  .nav-title {
+    position: relative;
+    li{
+      @extend .left;
+      width: px2rem(160);
+      height: px2rem(90);
+      text-align: center;
+      line-height:px2rem(90);
+      background-color:rgb(246,246,246);
+      &:nth-child(1){background-color:#fff;}
+    }
+    .top-line{
+      width:px2rem(160);
+      position: absolute;
+      left:px2rem(0);
+      top:px2rem(-45);
+      z-index:px2rem(1);
+    }
+  }
+}
+.nav-con li{
+  @include pic-con(px2rem(160),px2rem(163));
+  @extend .left;
+}
+
+#goods{
+  clear: both;
+  .wrap1{
+    height: px2rem(295);
+    .good-l img{
+      @include pic-con(px2rem(262),px2rem(295));
+      @extend .left;
+      border-right: px2rem(1) solid $color;
+    }
+    .good-r img{
+      @include pic-con(px2rem(377),px2rem(149));
+      @extend .left;
+      border-bottom: px2rem(1) solid $color;
+    }
+    .good-top img{
+      @include pic-con(px2rem(375/2),px2rem(145));
+      @extend .left;
+      border-right:px2rem(1) solid $color;
+    }
+  }
+}
+.wrap2{
+  width: px2rem(640);
+  height: px2rem(292);
+  a{
+    width: px2rem(318);
+    height:px2rem(144);
+    border-right: px2rem(1) solid $color;
+    border-bottom: px2rem(1) solid $color;
+    display: block;
+    float: left;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#foot-nav{
+  border-bottom:px2rem(7) solid rgb(252,89,11);
+  height: px2rem(100);
+  li{
+    @include size(px2rem(160),px2rem(93));
+    @extend .left;
+    background: #fff;
+  }
+  img{
+    @include pic-con(px2rem(47),px2rem(40));
+    margin:px2rem(10) auto;
+  }
+  div{
+    text-align: center;
+    font-size: large;
+    font-family: "Î¢ÈíÑÅºÚ", Tahoma, sans-serif;
+  }
+}
+
+
+

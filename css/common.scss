@@ -1,0 +1,118 @@
+@import "global.css";
+
+$designWidth: 640;
+@function px2rem( $px ) {
+  @return $px*320/$designWidth/20 + rem;
+}
+
+
+/*Ê×Ò³*/
+.left{
+  float: left;
+}
+
+@mixin pic-con($width,$height){
+  display: block;
+  width: $width;
+  height: $height;
+}
+
+@mixin size($width,$height){
+  width:$width;
+  height: $height;
+}
+
+/*ÁÐ±íÒ³*/
+@mixin font($fonSize,$fontWeight){
+  font-family: "Î¢ÈíÑÅºÚ", Tahoma, sans-serif;
+  font-size: $fonSize;
+  font-weight: $fontWeight;
+}
+/*Á¢¼´¹ºÂòÒ³*/
+@mixin num{
+  float: left;
+  width: px2rem(230);
+  margin-left: px2rem(17);
+  font-size: px2rem(40);
+  font-family: sans-serif;
+}
+
+/*¹ºÎï³µ*/
+@mixin  word{
+  display: inline-block;
+  @include size(px2rem(111),px2rem(28));
+  font-size:px2rem(20);
+  color: #fff;
+  text-align: center;
+  line-height: px2rem(28);
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: px2rem(115);
+}
+
+@mixin back{
+  .back {
+    @include size(px2rem(150), px2rem(150));
+    background-color: #fff;
+    margin: px2rem(25) 0 0 px2rem(25);
+    @extend .left;
+    img {
+      @include size(px2rem(96), px2rem(96));
+      margin: px2rem(28) 0 0 px2rem(28);
+    }
+  }
+  $display:inline-block ;
+  $fontSize:px2rem(29);
+  $Color:rgb(152,152,152);
+  .goods-a{
+    display:$display;
+    font-size:$fontSize;
+    @include size(px2rem(378),px2rem(65));
+    margin: px2rem(20) 0 0 px2rem(14);
+  }
+  .goods-b{
+    display:$display;
+    font-size:$fontSize;
+    color: rgb(252,74,0);
+    margin-left: px2rem(14);
+  }
+  .goods-c{
+    display:$display;
+    font-size:$fontSize;
+    margin-left: px2rem(48);
+    color:$Color;
+  }
+  input{
+    @include size(px2rem(84),px2rem(47));
+    border: 1px solid $Color;
+    text-align: center;
+    line-height: px2rem(47);
+    font-size:$fontSize;
+    color: $Color;
+  }
+  .goods-d{
+    display:$display;
+    font-size:$fontSize;
+    color: $Color;
+    margin-top: px2rem(24);
+  }
+}
+
+@mixin circle{
+  @include size(px2rem(39),px2rem(39));
+  border: 1px solid gray;
+  border-radius: px2rem(19);
+  margin: px2rem(79) 0 0 px2rem(24);
+  @extend .left;
+}
+
+@mixin look-g{
+    position: relative;
+    background: #fff;
+    a{display: inline-block; margin:px2rem(20) 0 0 px2rem(20);}
+}
+@mixin img{
+   display: inline-block;
+   position: absolute;
+   top: px2rem(28);right: px2rem(24);
+ }

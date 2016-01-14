@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url(global.css);
+/*首页*/
+.left, #nav-top .btn img, #nav-top p, #buy-con .goods2 .back, #buy-con .goods2 p, #buy-con .goods2 .favor1, #buy-con .buy-size span, #buy-con .buy-color span {
+  float: left; }
+
+/*列表页*/
+/*立即购买页*/
+/*购物车*/
+body {
+  background: #cbcbcb; }
+
+#nav-top {
+  margin-top: 1rem;
+  width: 16rem;
+  height: 2.2rem;
+  background: #fff; }
+  #nav-top .btn img {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 4%;
+    margin-left: 0.5rem; }
+  #nav-top p {
+    font-family: "微软雅黑", Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin: 0rem 0 0 3.5rem;
+    line-height: 2.2rem; }
+
+#buy-con {
+  overflow: hidden;
+  margin-top: 0.125rem; }
+  #buy-con .goods2 {
+    width: 16rem;
+    height: 4.95rem;
+    background: #efefef; }
+    #buy-con .goods2 .back {
+      width: 3.75rem;
+      height: 3.75rem;
+      background-color: #fff;
+      margin: 0.625rem 0 0 0.625rem; }
+      #buy-con .goods2 .back img {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin: 0.7rem 0 0 0.7rem; }
+    #buy-con .goods2 p {
+      width: 10.55rem;
+      height: 2.825rem;
+      margin: 0.5rem 0 0 0.625rem;
+      font-family: "微软雅黑", Tahoma, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 200; }
+    #buy-con .goods2 .favor1 {
+      width: 11.25rem; }
+      #buy-con .goods2 .favor1 span:nth-child(1) {
+        color: #ff5500;
+        font-size: 0.925rem;
+        font-weight: 200;
+        margin-left: 0.625rem; }
+      #buy-con .goods2 .favor1 span:nth-child(2) {
+        color: darkgray;
+        text-decoration: line-through;
+        font-size: 0.75rem;
+        margin-left: 0.625rem; }
+  #buy-con .buy-size, #buy-con .buy-color {
+    height: 3.95rem;
+    background: #efefef;
+    margin-top: 0.05rem; }
+    #buy-con .buy-size p, #buy-con .buy-color p {
+      width: 2.5rem;
+      margin-left: 0.6rem;
+      margin-bottom: 0.25rem;
+      font-family: "微软雅黑", Tahoma, sans-serif;
+      font-size: 1rem;
+      font-weight: 100; }
+    #buy-con .buy-size span, #buy-con .buy-color span {
+      width: 3.4rem;
+      height: 2rem;
+      display: block;
+      margin-left: 0.45rem;
+      background: #fff;
+      text-align: center;
+      line-height: 2rem;
+      border: 1px solid #ccc; }
+  #buy-con .buy-number {
+    position: relative;
+    background: #efefef;
+    border-top: 1px dashed #ccc;
+    width: 16rem;
+    height: 12.5rem; }
+    #buy-con .buy-number .num {
+      width: 2.5rem;
+      margin-left: 0.6rem;
+      margin-top: 0.25rem; }
+    #buy-con .buy-number .add span {
+      background: #fff;
+      font-size: 1.75rem;
+      font-family: sans-serif;
+      border: 1px solid #ccc;
+      display: block;
+      float: left;
+      margin-left: 0.375rem;
+      text-align: center;
+      line-height: 2.025rem; }
+      #buy-con .buy-number .add span:nth-child(1) {
+        margin-left: 0.6rem;
+        width: 2.025rem;
+        height: 2.025rem; }
+      #buy-con .buy-number .add span:nth-child(2) {
+        margin-left: 0.6rem;
+        width: 2.025rem;
+        height: 2.025rem; }
+    #buy-con .buy-number .add input {
+      float: left;
+      margin-left: 0.6rem;
+      width: 3.5rem;
+      height: 2.025rem;
+      font-size: 1.25rem;
+      font-family: sans-serif;
+      text-align: center;
+      line-height: 2.025rem; }
+    #buy-con .buy-number .num1 {
+      color: #ff5500;
+      float: left;
+      width: 5.75rem;
+      margin-left: 0.425rem;
+      font-size: 1rem;
+      font-family: sans-serif; }
+    #buy-con .buy-number .num2 {
+      float: left;
+      width: 5.75rem;
+      margin-left: 0.425rem;
+      font-size: 1rem;
+      font-family: sans-serif; }
+    #buy-con .buy-number .buy {
+      position: absolute;
+      bottom: 0.25rem;
+      left: 0.6rem;
+      width: 14.8rem;
+      height: 2.175rem;
+      background: #ff5500;
+      text-align: center;
+      line-height: 2.175rem;
+      bottom: 0.25rem;
+      border-radius: 0.375rem;
+      color: #fff; }
+
+/*# sourceMappingURL=buypage.css.map */

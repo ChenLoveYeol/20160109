@@ -1,0 +1,168 @@
+@import "common.scss";
+
+
+#nav-top{
+  margin-top: px2rem(40);
+  @include size(px2rem(640),px2rem(80));
+  position: relative;
+}
+.btn{
+  //height: px2rem(87);
+  img {
+    @extend .left;
+    @include pic-con(px2rem(40),px2rem(40));
+    margin-top: px2rem(20);
+    margin-left: px2rem(40);
+  }
+}
+
+.search{
+  position: absolute;
+  input{
+    @extend .left;
+    margin-top: px2rem(15);
+    margin-left:px2rem(30);
+    @include pic-con(px2rem(470),px2rem(50));
+    background-color:rgb(222,222,222);
+    border-radius: px2rem(10);
+  }
+  img{
+    position: relative;
+    left: px2rem(455);
+    top:px2rem(-40);
+    @include pic-con(px2rem(30),px2rem(30));
+  }
+}
+
+#nav{
+  li{
+    @include size(px2rem(640/3),px2rem(80));
+    @extend .left;
+    margin-top: px2rem(2);
+    text-align: center;
+    line-height: px2rem(80);
+  }
+  .price{
+    position: relative;
+    img{
+      @include pic-con(px2rem(16),px2rem(19));
+      position: absolute;
+      right: px2rem(35);
+      top: px2rem(35);
+    }
+  }
+}
+
+#nav-con{
+  clear: both;
+  overflow: hidden;
+  background: darkgray;
+  position: relative;
+  li{
+    @include size(px2rem(640),px2rem(199));
+    margin-top:px2rem(1);
+    background: rgb(239,239,239);
+  }
+  .goods1 {
+    overflow: hidden;
+    .bgc{
+      @include size(px2rem(150),px2rem(150));
+      background-color: #fff;
+      margin:px2rem(25) 0 0 px2rem(25);
+      @extend .left;
+      img{
+        @include size(px2rem(96),px2rem(96));
+        margin:px2rem(28) 0 0 px2rem(28);
+      }
+    }
+    p{
+      @include size(px2rem(422),px2rem(72));
+      @extend .left;
+      margin:px2rem(25) 0 0 px2rem(25);
+      @include font(px2rem(30),200);
+    }
+    table{
+      border-spacing: px2rem(12);
+      td{
+        @include size(px2rem(53),px2rem(32));
+        @include font(px2rem(25),200);
+        color:#fff;
+        text-align: center;
+        //text-decoration:line-through;
+        &:nth-child(1){background:rgb(255,79,79);}
+        &:nth-child(2){background:rgb(254,176,47);}
+        &:nth-child(3){background:rgb(254,176,47);}
+        &:nth-child(4){background:rgb(143,195,31);}
+        &:nth-child(5){background:rgb(255,125,34);}
+        &:nth-child(6){background:rgb(227,0,15);}
+        &:nth-child(7){background:rgb(255,56,127);}
+      }
+    }
+    .favor {
+      width: px2rem(450);
+      margin-left: px2rem(10);
+      @extend .left;
+      span{
+        &:nth-child(1){color: rgb(255,85,0);font-size:px2rem(37);font-weight:200;}
+        &:nth-child(2){color:rgb(169,169,169);text-decoration: line-through;font-size: px2rem(30);}
+        &:nth-child(3){color:rgb(87,87,87);@include font(px2rem(19),300);}
+        &:nth-child(4){color:rgb(87,87,87);@include font(px2rem(19),300);}
+      }
+    }
+  }
+  .goods2{
+    .back{
+      @include size(px2rem(150),px2rem(150));
+      background-color: #fff;
+      margin:px2rem(25) 0 0 px2rem(25);
+      @extend .left;
+      img{
+        @include size(px2rem(96),px2rem(96));
+        margin:px2rem(28) 0 0 px2rem(28);
+      }
+    }
+    p{
+      @include size(px2rem(422),px2rem(120));
+      @extend .left;
+      margin:px2rem(25) 0 0 px2rem(25);
+      @include font(px2rem(30),200);
+    }
+    .favor1{
+      width: px2rem(450);
+     // margin-left: px2rem(10);
+      @extend .left;
+      span{
+        &:nth-child(1){color: rgb(255,85,0);font-size:px2rem(37);font-weight:200;margin-left: px2rem(25);}
+        &:nth-child(2){color:rgb(169,169,169);text-decoration: line-through;font-size: px2rem(30);margin-left: px2rem(25);}
+        &:nth-child(3){color:rgb(87,87,87);@include font(px2rem(19),300);margin-left: px2rem(40)}
+        &:nth-child(4){color:rgb(87,87,87);@include font(px2rem(19),300);}
+      }
+    }
+  }
+  .car{
+    @include size(px2rem(98),px2rem(98));
+    position: absolute;
+    top: px2rem(807);
+    left: px2rem(520);
+    border-radius:px2rem(49);
+    background: rgba(0,0,0,0.5);
+    .shopcar{
+      position: relative;
+    }
+    img{
+      @include pic-con(px2rem(47),px2rem(47));
+      margin: px2rem(25) 0 0 px2rem(25);
+    }
+    .number{
+      position: absolute;
+      top: px2rem(-16);
+      left: px2rem(49);
+      @include size(px2rem(32),px2rem(32));
+      border-radius: px2rem(16);
+      background: rgb(252,74,0);
+      font-size:px2rem(20);
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

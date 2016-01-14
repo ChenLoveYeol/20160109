@@ -1,0 +1,233 @@
+@import "common.scss";
+
+html,body{
+  background: darkgray;
+}
+$bgColor:rgb(239,239,239);
+#nav-top{
+  margin-top: px2rem(40);
+  @include size(px2rem(640),px2rem(88));
+  background: #fff;
+  .btn {
+    img {
+      @extend .left;
+      @include pic-con(px2rem(40), px2rem(40));
+      margin-top:4%;
+      margin-left: px2rem(20);
+    }
+  }
+  span{
+    display: inline-block;
+    margin-left: px2rem(150);
+    line-height: px2rem(88);
+  }
+  .bg{color: rgb(152,152,152)}
+}
+#buy-con{
+  @include size(px2rem(640),px2rem(486));
+  background:$bgColor;
+  overflow: hidden;
+  .circle{
+    @include circle;
+    background-color:rgb(143,195,31);
+  }
+  .goods1 {
+    .back {
+      @include size(px2rem(150), px2rem(150));
+      background-color: #fff;
+      margin: px2rem(25) 0 0 px2rem(25);
+      @extend .left;
+      img {
+        @include size(px2rem(96), px2rem(96));
+        margin: px2rem(28) 0 0 px2rem(28);
+      }
+    }
+    $display:inline-block ;
+    $fontSize:px2rem(29);
+    $Color:rgb(152,152,152);
+    .goods-a{
+      display:$display;
+      font-size:$fontSize;
+      @include size(px2rem(378),px2rem(65));
+      margin: px2rem(20) 0 0 px2rem(14);
+    }
+    .goods-b{
+      display:$display;
+      font-size:$fontSize;
+      color: rgb(252,74,0);
+      margin-left: px2rem(14);
+    }
+    .goods-c{
+      display:$display;
+      font-size:$fontSize;
+      margin-left: px2rem(48);
+      color:$Color;
+    }
+    input{
+      @include size(px2rem(84),px2rem(47));
+      border: 1px solid $Color;
+      text-align: center;
+      line-height: px2rem(47);
+      font-size:$fontSize;
+      color: $Color;
+    }
+    .goods-d{
+      display:$display;
+      font-size:$fontSize;
+      color: $Color;
+      margin-top: px2rem(24);
+    }
+  }
+  #gift{
+    position: relative;
+    @include size(px2rem(535),px2rem(235));
+    border:2px dotted rgb(152,152,152);
+    margin-left: px2rem(87);
+    background: rgb(251,246,241);
+    .gift1{
+      @include size(px2rem(535),px2rem(54));
+      border-bottom: 2px dotted rgb(152,152,152);
+      span{
+        display: inline-block;
+        font-size: px2rem(25);
+        margin-left: px2rem(20);
+      }
+    }
+    .pic1{
+      display: inline-block;
+      position: absolute;
+      top: px2rem(25);
+      right: px2rem(15);
+      @include size(px2rem(26),px2rem(16));
+    }
+    .gift-con{
+      span{
+        position: absolute;
+        top: px2rem(0);
+        left: px2rem(0);
+        font-size: px2rem(15);
+      }
+      .pic2{
+        position: absolute;
+        top: px2rem(55);
+        left: px2rem(0);
+        display: inline-block;
+        @include size(px2rem(16),px2rem(26));
+        margin: px2rem(73) 0 0 px2rem(30);
+      }
+      .gift-pic{
+        position: relative;
+        img{
+          display: inline-block;
+          @include size(px2rem(113),px2rem(113));
+          margin:px2rem(30) 0 0 px2rem(30);
+        }
+        .gift-pic1{ margin-left: px2rem(65);}
+        .word1{
+          @include word;
+          left: px2rem(65);
+        }
+        .word2{@include word;left: px2rem(220);}
+        .word3{@include word;left: px2rem(375);}
+      }
+      .pic3{
+        position: absolute;
+        top: px2rem(55);
+        right: px2rem(15);
+        display: inline-block;
+        @include size(px2rem(16),px2rem(26));
+        margin: px2rem(73) 0 0 px2rem(30);
+      }
+    }
+  }
+}
+
+#gift-con1,#gift-con2{
+  @include size(px2rem(640),px2rem(310));
+  margin-top: px2rem(2);
+  background:$bgColor;
+  overflow: hidden;
+  .circle{@include circle;}
+  .goods2 {
+    @include back;
+    .look-gift{
+      @include size(px2rem(533),px2rem(52));
+      border: 2px dotted rgb(152,152,152);
+      background: rgb(251,246,241);
+      margin:px2rem(10) 0 0 px2rem(79);
+      font-size: px2rem(30);
+      line-height: px2rem(52);
+      position: relative;
+      span{
+        display: inline-block;
+        margin-left: px2rem(20);
+      }
+      img{@include pic-con(px2rem(16),px2rem(26));position: absolute;top: px2rem(13);right: px2rem(15);}
+    }
+  }
+}
+
+#gift-con2{
+  position: relative;
+  .trans{
+    @include size(px2rem(640),px2rem(53));
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: px2rem(101);
+    left: px2rem(0);
+    font-size: px2rem(30);
+    line-height: px2rem(53);
+    text-align: center;
+    color: #fff;
+    span{color: rgb(162,201,78);}
+  }
+  .total{
+    @include size(px2rem(640),px2rem(101));
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: px2rem(0);
+    left:px2rem(0);
+    .circle{
+      @include size(px2rem(39),px2rem(39));
+      border: 2px solid #fff;
+      border-radius: px2rem(19);
+      margin: px2rem(30) 0 0 px2rem(24);
+      @extend .left;
+    }
+    .total1{
+      @include size(px2rem(281),px2rem(101));
+      margin-left:px2rem(86);
+      position: relative;
+      .total2{font-size: px2rem(30);}
+      .total3{font-size: px2rem(30);color: #fff;}
+      .total4{font-size: px2rem(25);}
+      .settlement{
+        position: absolute;
+        top:px2rem(0);right: px2rem(-280);
+        @include size(px2rem(208),px2rem(101));
+        background:rgb(252,74,0);
+        color: #fff;
+        line-height: px2rem(101);
+        text-align: center;
+      }
+    }
+  }
+}
+
+#foot-nav{
+  height: px2rem(93);
+  li{
+    @include size(px2rem(160),px2rem(93));
+    @extend .left;
+    background: #fff;
+  }
+  img{
+    @include pic-con(px2rem(47),px2rem(40));
+    margin:px2rem(10) auto;
+  }
+  div{
+    text-align: center;
+    font-size: large;
+    font-family: "Î¢ÈíÑÅºÚ", Tahoma, sans-serif;
+  }
+}

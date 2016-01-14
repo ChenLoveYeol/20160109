@@ -1,0 +1,242 @@
+@import "common.scss";
+
+html,body{background: #fff;}
+#goods-pic{
+  overflow: hidden;
+  margin-top: px2rem(40);
+  @include size(px2rem(640),px2rem(438));
+  background: #fff;
+  position: relative;
+  .pic-con{
+    @include pic-con(px2rem(431),px2rem(306));
+    margin:px2rem(36) auto;
+    .signout{
+      @include size(px2rem(72),px2rem(72));
+      background: rgba(0,0,0,0.5);
+      border-radius: px2rem(36);
+      position: absolute;
+      top: px2rem(5);
+      left: px2rem(5);
+      img{
+        @include pic-con(px2rem(25),px2rem(37));
+        position: absolute;
+        top: px2rem(18);
+        left: px2rem(25);
+      }
+    }
+    .intro{
+      @include size(px2rem(640),px2rem(114));
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      bottom: px2rem(0);
+      left: px2rem(0);
+      p{
+        color: #fff;
+        @include size(px2rem(450),px2rem(113));
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .intro1{
+        @include size(px2rem(50),px2rem(70));
+        @extend .left;
+        position: absolute;
+        bottom: px2rem(5);
+        left: px2rem(450);
+      }
+      .intro2{
+        @include size(px2rem(50),px2rem(70));
+        @extend .left;
+        position: absolute;
+        bottom: px2rem(5);
+        left: px2rem(550);
+      }
+    }
+  }
+}
+
+#price-con{
+  @include size(px2rem(640),px2rem(367));
+  overflow: hidden;
+  //height: px2rem(367);
+  //margin-left: px2rem(24);
+  .price{
+    margin-left: px2rem(24);
+    .price1{
+      display: inline-block;
+      width: px2rem(640);
+      text-decoration: line-through;
+      font-size: px2rem(30);
+      color:rgb(167,167,167);
+    }
+    .price2{font-size: px2rem(40);color: rgb(252,74,0);}
+  }
+  .price3,.price4,.price5{color: rgb(121,121,121);font-size: px2rem(25);}
+  .price3{ display: inline-block; margin-left: px2rem(30);}
+  .youhui{
+    margin-left: px2rem(24);
+    @include size(px2rem(588),px2rem(68));
+    background: rgb(251,247,247);
+    border: 2px dotted rgb(152,152,152);
+    border-radius:px2rem(10);
+    margin-top: px2rem(27);
+    p{
+      font-size: px2rem(25);
+      color: rgb(152,152,152);
+      margin-left: px2rem(20);
+    }
+  }
+  .method{
+    margin-left: px2rem(24);
+    @include size(px2rem(592),px2rem(63));
+    margin-top: px2rem(30);
+    img{
+      display: inline-block;
+      @include size(px2rem(188),px2rem(26));
+      margin-bottom: px2rem(10);
+    }
+  }
+}
+
+#look-goods{
+  overflow: hidden;
+  margin-left: px2rem(24);
+  .look-g{
+    @include look-g;
+    a[href$="ins"]::before{content: url("../images/ins.png")};
+    img{@include img;@include size(px2rem(26),px2rem(16));}
+  }
+  .goods2{
+    @include size(px2rem(616),px2rem(198));
+    background:rgb(239,239,239);
+    .back{
+      @include size(px2rem(150),px2rem(150));
+      background-color: #fff;
+      margin:px2rem(25) 0 0 px2rem(25);
+      @extend .left;
+      img{
+        @include size(px2rem(96),px2rem(96));
+        margin:px2rem(28) 0 0 px2rem(28);
+      }
+    }
+    .con1{
+      display: inline-block;
+      @include size(px2rem(415),px2rem(77));
+      font-size: px2rem(25);
+      margin: px2rem(26) 0 0 px2rem(19);
+    }
+    .con2{
+      display: inline-block;
+      color: rgb(152,152,152);
+      font-size: px2rem(20);
+      margin: px2rem(34) 0 0 px2rem(19);
+    }
+  }
+}
+
+#goods-detail{
+  //width: px2rem(640);
+  overflow: hidden;
+  //margin-left: px2rem(24);
+  .look-g{
+    margin-left: px2rem(24);
+    @include look-g;
+    a[href$="detail"]::before{content: url("../images/detail.png")};
+    img{@include img;@include size(px2rem(16),px2rem(26));}
+  }
+}
+
+#goods-data{
+  //height: px2rem(367);
+  //width: px2rem(640);
+  //margin-left: px2rem(24);
+  overflow: hidden;
+  .look-g{
+    @include look-g;
+    margin-left: px2rem(24);
+    a[href$="data"]::before{content: url("../images/data.png")}
+    img{@include img;@include size(px2rem(26),px2rem(16));}
+  }
+}
+#user-comment{
+  @include size(px2rem(640),px2rem(642));
+  //height: px2rem(642);
+  background: lightblue;
+ // margin-left: px2rem(24);
+  position: relative;
+  .look-g{
+    @include look-g;
+    a[href$="user"]::before{content: url("../images/user.png")}
+    img{@include img;@include size(px2rem(26),px2rem(16));}
+  }
+  .more{
+    @include size(px2rem(640),px2rem(104));
+    background: #fff;
+    z-index: 1;
+    border: 1px solid gray;
+    position: absolute;
+    bottom: px2rem(0);
+    left: px2rem(0);
+    img{
+      display: inline-block;
+      @include size(px2rem(26),px2rem(16));
+      position: absolute;
+      top: px2rem(45);
+      left: px2rem(205);
+    }
+    span{
+      display:inline-block;
+      color: rgb(118,118,118);
+      font-size: px2rem(30);
+      line-height: px2rem(104);
+      margin-left: px2rem(245);
+    }
+  }
+  .car{
+    @include size(px2rem(98),px2rem(98));
+    position: absolute;
+    bottom: px2rem(30);
+    right: px2rem(35);
+    z-index: 2;
+    border-radius:px2rem(49);
+    background: rgba(0,0,0,0.5);
+    .shopcar{
+      position: relative;
+    }
+    img{
+      @include pic-con(px2rem(47),px2rem(47));
+      margin: px2rem(25) 0 0 px2rem(25);
+    }
+    .number{
+      position: absolute;
+      top: px2rem(-16);
+      left: px2rem(49);
+      @include size(px2rem(32),px2rem(32));
+      border-radius: px2rem(16);
+      background: rgb(252,74,0);
+      font-size:px2rem(20);
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+
+#buy{
+@include size(px2rem(640),px2rem(120));
+  //margin-left: px2rem(24);
+  background:rgb(242,242,242);
+  span{
+    display: inline-block;
+    @include size(px2rem(246),px2rem(89));
+    border-radius: px2rem(10);
+    background:rgb(255,85,0);
+    font-size: px2rem(25);
+    text-align: center;
+    line-height:px2rem(89);
+    color: #fff;
+    margin:px2rem(20) 0 0 px2rem(46);
+  }
+  .buy2{
+    background: rgb(143,195,31);
+  }
+}

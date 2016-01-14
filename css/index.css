@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url(global.css);
+/*首页*/
+.left, .menu img, .search input, #nav .nav-title li, .nav-con li, #goods .wrap1 .good-l img, #goods .wrap1 .good-r img, #goods .wrap1 .good-top img, #foot-nav li {
+  float: left; }
+
+/*列表页*/
+/*立即购买页*/
+/*购物车*/
+#nav-top {
+  margin-top: 1rem;
+  width: 16rem;
+  height: 1.25rem; }
+
+.menu {
+  height: 2.175rem; }
+  .menu img {
+    display: block;
+    width: 1.35rem;
+    height: 1.125rem;
+    margin-left: 0.75rem; }
+
+.search {
+  position: absolute; }
+  .search input {
+    margin-left: 0.75rem;
+    display: block;
+    width: 11.75rem;
+    height: 1.125rem;
+    background-color: #dedede;
+    border-radius: 0.25rem; }
+  .search img {
+    position: relative;
+    left: 11.375rem;
+    top: -0.9rem;
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem; }
+
+#banner img {
+  display: block;
+  width: 16rem;
+  height: 6.425rem;
+  margin-top: 0.325rem; }
+
+#nav .nav-title {
+  position: relative; }
+  #nav .nav-title li {
+    width: 4rem;
+    height: 2.25rem;
+    text-align: center;
+    line-height: 2.25rem;
+    background-color: #f6f6f6; }
+    #nav .nav-title li:nth-child(1) {
+      background-color: #fff; }
+  #nav .nav-title .top-line {
+    width: 4rem;
+    position: absolute;
+    left: 0rem;
+    top: -1.125rem;
+    z-index: 0.025rem; }
+
+.nav-con li {
+  display: block;
+  width: 4rem;
+  height: 4.075rem; }
+
+#goods {
+  clear: both; }
+  #goods .wrap1 {
+    height: 7.375rem; }
+    #goods .wrap1 .good-l img {
+      display: block;
+      width: 6.55rem;
+      height: 7.375rem;
+      border-right: 0.025rem solid #dbdbdb; }
+    #goods .wrap1 .good-r img {
+      display: block;
+      width: 9.425rem;
+      height: 3.725rem;
+      border-bottom: 0.025rem solid #dbdbdb; }
+    #goods .wrap1 .good-top img {
+      display: block;
+      width: 4.6875rem;
+      height: 3.625rem;
+      border-right: 0.025rem solid #dbdbdb; }
+
+.wrap2 {
+  width: 16rem;
+  height: 7.3rem; }
+  .wrap2 a {
+    width: 7.95rem;
+    height: 3.6rem;
+    border-right: 0.025rem solid #dbdbdb;
+    border-bottom: 0.025rem solid #dbdbdb;
+    display: block;
+    float: left; }
+  .wrap2 img {
+    width: 100%;
+    height: 100%; }
+
+#foot-nav {
+  border-bottom: 0.175rem solid #fc590b;
+  height: 2.5rem; }
+  #foot-nav li {
+    width: 4rem;
+    height: 2.325rem;
+    background: #fff; }
+  #foot-nav img {
+    display: block;
+    width: 1.175rem;
+    height: 1rem;
+    margin: 0.25rem auto; }
+  #foot-nav div {
+    text-align: center;
+    font-size: large;
+    font-family: "微软雅黑", Tahoma, sans-serif; }
+
+/*# sourceMappingURL=index.css.map */

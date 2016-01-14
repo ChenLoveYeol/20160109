@@ -1,0 +1,106 @@
+@import "common.scss";
+
+#nav-top{
+  margin-top: px2rem(40);
+  @include size(px2rem(640),px2rem(88));
+  background: #fff;
+  .btn {
+    img {
+      @extend .left;
+      @include pic-con(px2rem(40), px2rem(40));
+      margin-top: px2rem(20);
+      margin-left: px2rem(40);
+    }
+  }
+  p{
+    @include font(px2rem(50),200);
+    @extend .left;
+    margin:px2rem(10) 0 0 px2rem(40);
+    width:px2rem(400);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+#goods-intro{
+  @include size(px2rem(640),px2rem(1327));
+  font-size: px2rem(25);
+  font-family:sans-serif,Tahoma,"Î¢ÈíÑÅºÚ";
+  background:#fff;
+  overflow: hidden;
+  p{
+    margin-top: px2rem(30);
+  }
+}
+#goods-detail{
+  @include size(px2rem(640),px2rem(320));
+  background:#fff;
+  margin-top: px2rem(5);
+  p{
+    font-size: px2rem(35);
+    font-family:sans-serif;
+    margin-left: px2rem(20);
+  }
+}
+#goods-prompt{
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  p{
+    font-size: px2rem(35);
+    font-family:sans-serif;
+    margin:px2rem(10) 0 0 px2rem(20);
+    height: px2rem(100);
+  }
+  .pic{
+    img{
+      @include pic-con(px2rem(640),px2rem(366));
+    }
+    .goods-buy{
+      @include size(px2rem(640),px2rem(124));
+      background:rgba(242,242,242,0.8);
+     position: absolute;
+      bottom: px2rem(0);
+      left: px2rem(0);
+      span{
+        display: block;
+        @extend .left;
+        margin:px2rem(15) 0 0 px2rem(30);
+        border-radius: px2rem(5);
+        text-align: center;
+        line-height: px2rem(91);
+        color: #fff;
+        @include size(px2rem(243),px2rem(91));
+      }
+      .goods-buy1{background:rgb(255,85,0);}
+      .goods-buy2{background:rgb(143,195,31);}
+    }
+  }
+
+  .car{
+    @include size(px2rem(98),px2rem(98));
+    background: #000;
+    border-radius:px2rem(49);
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: px2rem(150);
+    left: px2rem(500);
+    img{
+      @include pic-con(px2rem(47),px2rem(47));
+      margin: px2rem(25) 0 0 px2rem(25);
+    }
+    .number{
+      position: absolute;
+      top: px2rem(10);
+      left: px2rem(49);
+      @include size(px2rem(32),px2rem(32));
+      border-radius: px2rem(16);
+      background: rgb(252,74,0);
+      font-size:px2rem(20);
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+

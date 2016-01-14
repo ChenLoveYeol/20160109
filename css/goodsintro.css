@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url(global.css);
+/*首页*/
+.left, #nav-top .btn img, #nav-top p, #goods-prompt .pic .goods-buy span {
+  float: left; }
+
+/*列表页*/
+/*立即购买页*/
+/*购物车*/
+#nav-top {
+  margin-top: 1rem;
+  width: 16rem;
+  height: 2.2rem;
+  background: #fff; }
+  #nav-top .btn img {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem; }
+  #nav-top p {
+    font-family: "微软雅黑", Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin: 0.25rem 0 0 1rem;
+    width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+#goods-intro {
+  width: 16rem;
+  height: 33.175rem;
+  font-size: 0.625rem;
+  font-family: sans-serif,Tahoma,"微软雅黑";
+  background: #fff;
+  overflow: hidden; }
+  #goods-intro p {
+    margin-top: 0.75rem; }
+
+#goods-detail {
+  width: 16rem;
+  height: 8rem;
+  background: #fff;
+  margin-top: 0.125rem; }
+  #goods-detail p {
+    font-size: 0.875rem;
+    font-family: sans-serif;
+    margin-left: 0.5rem; }
+
+#goods-prompt {
+  background: #fff;
+  overflow: hidden;
+  position: relative; }
+  #goods-prompt p {
+    font-size: 0.875rem;
+    font-family: sans-serif;
+    margin: 0.25rem 0 0 0.5rem;
+    height: 2.5rem; }
+  #goods-prompt .pic img {
+    display: block;
+    width: 16rem;
+    height: 9.15rem; }
+  #goods-prompt .pic .goods-buy {
+    width: 16rem;
+    height: 3.1rem;
+    background: rgba(242, 242, 242, 0.8);
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem; }
+    #goods-prompt .pic .goods-buy span {
+      display: block;
+      margin: 0.375rem 0 0 0.75rem;
+      border-radius: 0.125rem;
+      text-align: center;
+      line-height: 2.275rem;
+      color: #fff;
+      width: 6.075rem;
+      height: 2.275rem; }
+    #goods-prompt .pic .goods-buy .goods-buy1 {
+      background: #ff5500; }
+    #goods-prompt .pic .goods-buy .goods-buy2 {
+      background: #8fc31f; }
+  #goods-prompt .car {
+    width: 2.45rem;
+    height: 2.45rem;
+    background: #000;
+    border-radius: 1.225rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 3.75rem;
+    left: 12.5rem; }
+    #goods-prompt .car img {
+      display: block;
+      width: 1.175rem;
+      height: 1.175rem;
+      margin: 0.625rem 0 0 0.625rem; }
+    #goods-prompt .car .number {
+      position: absolute;
+      top: 0.25rem;
+      left: 1.225rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 0.4rem;
+      background: #fc4a00;
+      font-size: 0.5rem;
+      text-align: center;
+      color: #fff; }
+
+/*# sourceMappingURL=goodsintro.css.map */
